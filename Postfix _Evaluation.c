@@ -70,8 +70,15 @@ int main()
          x=evaluate(op2,op1,optr);
          push(&s,x);
       }
- print(s);
- printf("\n");
    }
 
+printf("The result is :  ");
+print(s);
+printf("\n");   
 }
+
+/*Input - Output Sample
+Enter the postfix exp to be evaluated 
+2 3 1 * + 9 -
+The result is :  -4
+*/
