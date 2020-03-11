@@ -72,9 +72,9 @@ int main()
       }
    }
 
-printf("The result is :  ");
-print(s);
-printf("\n");   
+   printf("The result is :  ");
+   print(s);
+   printf("\n");   
 }
 
 /*Input - Output Sample
