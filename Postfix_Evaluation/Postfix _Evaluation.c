@@ -45,7 +45,7 @@ int pop(struct stack *ps)
    else
    {
      x = ps->A[ps->Top];
-     ps->Top = ps->Top-1;
+     ps->Top = ps->Top - 1;
      return x;
    }
 }
