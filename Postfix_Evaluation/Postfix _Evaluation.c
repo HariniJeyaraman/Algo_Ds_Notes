@@ -11,13 +11,13 @@ struct stack
 
 void push(struct stack *ps, char x)
 {
-    if(ps -> Top == 99)
-    printf("\nStack is Full\n");
-    else
-    {
-      ps -> Top = ps -> Top + 1;
-      ps -> A[ps -> Top] = x;
-    }
+   if(ps -> Top == 99)
+   printf("\nStack is Full\n");
+   else
+   {
+   ps -> Top = ps -> Top + 1;
+   ps -> A[ps -> Top] = x;
+   }
 }
 
 int evaluate(int op1, int op2, char c)
