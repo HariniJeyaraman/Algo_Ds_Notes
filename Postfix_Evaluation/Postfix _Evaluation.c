@@ -60,7 +60,7 @@ int main()
   s.Top = -1;
   printf("Enter the postfix exp to be evaluated \n");
   gets(s.A);
-  for(i = 0 ; i < strlen(s.A) ; i++)
+  for(i = 0; i < strlen(s.A); i++)
   {
       if(isdigit(s.A[i]))
       push(&s, s.A[i] - '0');
