@@ -11,7 +11,7 @@ struct stack
 
 void push(struct stack *ps, char x)
 {
-    if(ps->Top == 99)
+    if(ps -> Top == 99)
     printf("\nStack is Full\n");
     else
     {
