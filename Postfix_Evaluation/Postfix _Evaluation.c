@@ -18,7 +18,7 @@ void push(struct stack *ps,char x)
     }
 }
 
-int evaluate(int op1,int op2,char c)
+int evaluate(int op1, int op2, char c)
 {
    if(c == '+')
    return op1 + op2;
@@ -27,7 +27,7 @@ int evaluate(int op1,int op2,char c)
    else if(c == '*')
    return op1 * op2;
    else if(c == '/')
-   return op1/op2;
+   return op1 / op2;
 }
 
 void print(struct stack s)
@@ -52,7 +52,7 @@ int pop(struct stack *ps)
 
 int main()
 {
-  int op1,op2,x,i;
+  int op1, op2, x, i;
   char optr;
   struct stack s;
   s.Top = -1;
@@ -61,14 +61,14 @@ int main()
   for(i = 0 ; i < strlen(s.A) ; i++)
   {
       if(isdigit(s.A[i]))
-      push(&s,s.A[i]-'0');
+      push(&s, s.A[i] - '0');
       else if(s.A[i] == '+' || s.A[i] == '-' || s.A[i] == '*' || s.A[i] == '/')
       {
          op1 = pop(&s);
          op2 = pop(&s);
          optr = s.A[i];
-         x = evaluate(op2,op1,optr);
-         push(&s,x);
+         x = evaluate(op2, op1, optr);
+         push(&s, x);
       }
    }
 
