@@ -2,12 +2,14 @@
 #include<stdio.h>
 #include<string.h>
 #include<ctype.h>
+
 struct stack
 {
    char A[100];
    int Top;
 };
-void push(struct stack *ps,char x)
+
+void push(struct stack *ps, char x)
 {
     if(ps->Top == 99)
     printf("\nStack is Full\n");
@@ -32,9 +34,9 @@ int evaluate(int op1, int op2, char c)
 
 void print(struct stack s)
 {
-  int i;
-  for(i = 0 ; i <= s.Top ; i++)
-  printf("%d\t",s.A[i]);
+   int i;
+   for(i = 0 ; i <= s.Top ; i++)
+   printf("%d\t", s.A[i]);
 }
 
 int pop(struct stack *ps)
@@ -44,8 +46,8 @@ int pop(struct stack *ps)
    printf("Stack is empty!Element cant be deleted\n");
    else
    {
-     x = ps->A[ps->Top];
-     ps->Top = ps->Top - 1;
+     x = ps -> A[ps -> Top];
+     ps -> Top = ps -> Top - 1;
      return x;
    }
 }
