@@ -15,8 +15,8 @@ void push(struct stack *ps, char x)
     printf("\nStack is Full\n");
     else
     {
-      ps->Top = ps->Top + 1;
-      ps->A[ps->Top] = x;
+      ps -> Top = ps -> Top + 1;
+      ps -> A[ps -> Top] = x;
     }
 }
 
