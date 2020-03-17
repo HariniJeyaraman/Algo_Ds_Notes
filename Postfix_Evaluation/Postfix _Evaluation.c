@@ -42,7 +42,7 @@ void print(struct stack s)
 int pop(struct stack *ps)
 {
     int x;
-    if(ps->Top == -1)
+    if(ps -> Top == -1)
        printf("Stack is empty!Element cant be deleted\n");
     else
     {
